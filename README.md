@@ -31,13 +31,7 @@ As a user, I want to set goals for my activities so that I can improve my time m
 As a user, I want to see visual representations (charts) of my activity data to better understand my time usage.
 
 ## Pseudo Code
-// User Registration
-function registerUser(name, email, password):
-    hashedPassword = hash(password)  // Secure password storage
-    userId = saveToDatabase(User, {name, email, hashedPassword})
-    return userId
-
-// User Login
+- // User Login
 function loginUser(email, password):
     user = findUserByEmail(email)
     if user and verifyHash(password, user.password):
@@ -45,31 +39,26 @@ function loginUser(email, password):
     else:
         return "Invalid credentials"
 
-// Log Activity
+- // Log Activity
 function logActivity(userId, activityName, duration, date):
     activityId = saveToDatabase(Activity, {name: activityName, duration, date, userId})
     return activityId
 
-// View Activities
+- // View Activities
 function getUserActivities(userId):
     return fetchFromDatabase(Activity where userId = userId)
 
-// Edit Activity
+- // Edit Activity
 function editActivity(activityId, newName, newDuration, newDate):
     updateDatabase(Activity, activityId, {name: newName, duration: newDuration, date: newDate})
 
-// Delete Activity
+- // Delete Activity
 function deleteActivity(activityId):
     removeFromDatabase(Activity, activityId)
 
-// Set Goals
+- // Set Goals
 function setGoal(userId, goal):
     saveToDatabase(Goal, {userId, goal})
-
-// Visualize Trends
-function visualizeTimeUsage(userId):
-    activities = getUserActivities(userId)
-    generateCharts(activities)  // Create charts based on activity data
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/) 
