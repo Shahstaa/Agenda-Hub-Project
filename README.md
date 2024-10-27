@@ -37,9 +37,9 @@ Community Challenges:
 ## Pseudo Code
 
 ## Prerequisites
-- [Node.js](https://nodejs.org/) (LTS or later)
-- [MongoDB](https://www.mongodb.com/) (make sure it's running)
-- [Git](https://git-scm.com/) (for cloning the repository)
+- [Node.js](https://nodejs.org/) 
+- [MongoDB](https://www.mongodb.com/) 
+- [Git](https://git-scm.com/) 
 
 
 ## Features
