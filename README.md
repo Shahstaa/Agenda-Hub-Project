@@ -1,40 +1,75 @@
 # Agenda Hub Project
 
 ## Project Mock-up
-![alt text](<images/Project Mockup.png>)
+![alt text](images/Mockup-.png)
+
 ## Idea Description
-The Agenda Hub is a comprehensive application designed to help users efficiently plan and manage various events, from personal parties to corporate meetings. It allows users to create events, invite friends, track RSVPs, and manage budgets within an intuitive interface. Additionally, it promotes sustainability through carbon footprint tracking features, offering users tools to measure and reduce their environmental impact while organizing events.
+A web application that allows users to log their daily activities, providing a platform to track time spent on various tasks and reflect on productivity. Users can analyze their time usage to identify patterns, set personal improvement goals, and visualize trends over time. By offering insights into daily time allocation, this self-reflective tool can enhance personal productivity and help users prioritize tasks effectively.
 
 ## Data Model
 -ERD/Data Entity Fields:
-![alt text](images/ERD.png)
+![alt text](<images/ERD diagram.png>)
 
 ## User Stories
-User Authentication:
-- As a user, I want to sign up using my email or social media for easy access.
-- As a user, I want to manage my profile to keep my contact information updated.
 
-Dashboard:
--	As a user, I want to view a summary of my upcoming events and carbon footprint on my dashboard.
--	As a user, I want to switch to a calendar view to see my events by date.
+- User Registration and Login
+As a user, I want to create an account so I can securely log my activities.
+As a user, I want to log in to my account so I can access my activities.
 
-Event Creation:
-- As a user, I want to create an event with details like name, date, and location.
-- As a user, I want to set privacy settings for my event.
+- Logging Activities
+As a user, I want to log a new activity with its name, duration, and date so I can track my time effectively.
+As a user, I want to edit or delete activities I have logged for better accuracy.
 
-Invitations and RSVPs:
-- As a user, I want to invite friends and track their RSVPs.
-- As a user, I want to manage my guest list and see dietary restrictions.
+- Viewing and Analyzing Activities
+As a user, I want to view a list of all my activities to understand how I’m spending my time.
+As a user, I want to see a summary of time spent on different activities to identify trends.
 
-Carbon Footprint Tracking:
-- As a user, I want to input my daily activities to calculate my carbon emissions.
-- As a user, I want suggestions to reduce my carbon footprint and track my progress.
+- Setting Goals
+As a user, I want to set goals for my activities so that I can improve my time management.
 
-Community Challenges:
-- As a user, I want to join community challenges to collectively reduce carbon footprints.
-- As a user, I want to see my progress compared to others in the community.
+- Visualizing Data
+As a user, I want to see visual representations (charts) of my activity data to better understand my time usage.
 
 ## Pseudo Code
+// User Registration
+function registerUser(name, email, password):
+    hashedPassword = hash(password)  // Secure password storage
+    userId = saveToDatabase(User, {name, email, hashedPassword})
+    return userId
+
+// User Login
+function loginUser(email, password):
+    user = findUserByEmail(email)
+    if user and verifyHash(password, user.password):
+        return user.id  // Successful login
+    else:
+        return "Invalid credentials"
+
+// Log Activity
+function logActivity(userId, activityName, duration, date):
+    activityId = saveToDatabase(Activity, {name: activityName, duration, date, userId})
+    return activityId
+
+// View Activities
+function getUserActivities(userId):
+    return fetchFromDatabase(Activity where userId = userId)
+
+// Edit Activity
+function editActivity(activityId, newName, newDuration, newDate):
+    updateDatabase(Activity, activityId, {name: newName, duration: newDuration, date: newDate})
+
+// Delete Activity
+function deleteActivity(activityId):
+    removeFromDatabase(Activity, activityId)
+
+// Set Goals
+function setGoal(userId, goal):
+    saveToDatabase(Goal, {userId, goal})
+
+// Visualize Trends
+function visualizeTimeUsage(userId):
+    activities = getUserActivities(userId)
+    generateCharts(activities)  // Create charts based on activity data
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/) 
