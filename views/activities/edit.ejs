@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Activity</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>Edit Activity</h1>
+        <form action="/activities/<%= activity._id %>?_method=PUT" method="POST">
+            <label for="name">Activity Name:</label>
+            <input type="text" name="name" value="<%= activity.name %>" required>
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" name="duration" value="<%= activity.duration %>" required>
+            <label for="date">Date:</label>
+            <input type="date" name="date" value="<%= activity.date.toISOString().slice(0, 10) %>" required>
+            <button type="submit">Update Activity</button>
+            <a href="/activities">Back to Activities</a>
+
+        </form>
+    </div>
+</body>
+</html>

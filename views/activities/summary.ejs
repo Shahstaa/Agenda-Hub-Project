@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity Summary</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>Activity Summary</h1>
+        <ul>
+            <% activities.forEach(activity => { %>
+                <li>
+                    <%= activity.name %>: <%= activity.duration %> minutes
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    <h3>Total Time Tracked: <%= totalDuration %> minutes</h3>
+    <a href="/activities">Back to Activities</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <title>Your Activities</title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Here's All Your Logged Activities</h1>
+    <a href="/activities/new">Add a New Activity</a>
+    <ul>
+        <% activity.forEach(activity => { %>
+            <% if (activity) { %>
+                <li>
+                    <h2><%= activity.name %></h2>
+                    <p><strong>Duration:</strong> <%= activity.duration %> minutes</p>
+                    <p><strong>Date:</strong> <%= activity.date %></p>
+                    <form action="/activities/<%= activity._id %>?_method=DELETE" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <form action="/activities/<%= activity._id %>/edit" method="GET" style="display:inline;">
+                        <button type="submit">Edit</button>
+                    </form>
+                </li> 
+                <% } else { %>
+                    <p><strong>Added By:</strong> <%= activity.user_id.username %></p>
+                <% } %>
+        <% }) %>
+    </ul>
+    <% if (activity.length === 0) { %>
+        <p>No activities logged yet. Please log some!</p>
+    <% } %>
+</body>
+</html>
+

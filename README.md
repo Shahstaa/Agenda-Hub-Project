@@ -12,22 +12,22 @@ A web application that allows users to log their daily activities, providing a p
 
 ## User Stories
 
-- User Registration and Login
+- User Registration and Login:
 As a user, I want to create an account so I can securely log my activities.
 As a user, I want to log in to my account so I can access my activities.
 
-- Logging Activities
+- Logging Activities:
 As a user, I want to log a new activity with its name, duration, and date so I can track my time effectively.
 As a user, I want to edit or delete activities I have logged for better accuracy.
 
-- Viewing and Analyzing Activities
+- Viewing and Analyzing Activities:
 As a user, I want to view a list of all my activities to understand how I’m spending my time.
 As a user, I want to see a summary of time spent on different activities to identify trends.
 
-- Setting Goals
+- Setting Goals:
 As a user, I want to set goals for my activities so that I can improve my time management.
 
-- Visualizing Data
+- Visualizing Data:
 As a user, I want to see visual representations (charts) of my activity data to better understand my time usage.
 
 ## Pseudo Code
@@ -59,6 +59,23 @@ function deleteActivity(activityId):
 - // Set Goals
 function setGoal(userId, goal):
     saveToDatabase(Goal, {userId, goal})
+    
+1. Start Server
+2. Connect to MongoDB
+3. Set up Middleware
+4. Define Routes:
+   - / (Home)
+   - /auth (User Authentication)
+   - /activities (Activity Management)
+     - GET: Show All Activities
+     - POST: Create New Activity
+     - GET: Show Activity by ID
+     - PUT: Edit Activity
+     - DELETE: Remove Activity
+     - GET: Summary of Activities
+5. Render Views
+6. Start Listening on Port
+
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/) 

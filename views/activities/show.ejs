@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>Activity: <%= activity.name %></h1>
+        <p>Time Spent: <%= activity.timeSpent %> minutes</p>
+        <p>Date: <%= activity.date.toDateString() %></p>
+        <a href="/activities/edit/<%= activity._id %>">Edit Activity</a>
+        <form action="/activities/<%= activity._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete Activity</button>
+        </form>
+    </div>
+    <a href="/activities">Back to Activities</a>
+</body>
+</html>

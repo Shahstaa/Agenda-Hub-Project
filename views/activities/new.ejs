@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log a New Activity</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <%- include('../partials/_navbar.ejs') %>
+        <h1>Add a New Activity</h1>
+        <form action="/activities" method="POST">
+            <label for="name">Activity Name:</label>
+            <input type="text" name="name" >
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" name="duration" >
+            <label for="date">Date:</label>
+            <input type="date" name="date" >
+            <button type="submit">Save Activity</button>
+        </form>
+        <a href="/activities">Back to Activities</a>
+    </div>
+</body>
+</html>
