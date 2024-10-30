@@ -7,7 +7,8 @@
     <title>User Profile</title>
 </head>
 <body>
-    <%- include('../partials/_navbar.ejs') %>
+<%- include('../partials/_navbar.ejs') %>
+<div class="profile-pic-img">
     <div class="profile-container">
         <div class="profile-header">
             <h1>Profile of <%= user.username %></h1>
@@ -22,9 +23,9 @@
         <form action="/activities/profile" method="POST" enctype="multipart/form-data">
             <p><strong>Profile Picture URL:</strong></p>
             <input type="text" name="profilePicture"></form>
-       <form action="/activities/profile" method="POST" enctype="multipart/form-data">
+         <form action="/activities/profile" method="POST" enctype="multipart/form-data">
             <p><strong>Joined on:</strong> <%= user.createdAt ? user.createdAt.toDateString() : 'Date not available' %></p></form>  
-        <form action="/activities/profile" method="POST" enctype="multipart/form-data"></form>
+         <form action="/activities/profile" method="POST" enctype="multipart/form-data"></form>
             <h2>Your Activities</h2>
             <ul>
                 <% if (user.activity && user.activity.length > 0) { %>
@@ -42,6 +43,7 @@
         
         <a href="/activities">Back to Activities</a>
     </div>
+</div>
 </body>
 </html>
 

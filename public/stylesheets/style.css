@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Satisfy&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -20,8 +22,11 @@ body {
     color:#2e2e2e;
 }
 .hero-section h1 {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
     font-size: 2.5em;
-    margin: 0;
+    margin: 80px;
 }
 .hero-section h2 {
     font-size: 2.5em;
@@ -29,8 +34,11 @@ body {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 .hero-section h3 {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: 90px;
 }
 .features {
     display: flex;
@@ -49,7 +57,7 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .feature h4 {
-    color: #2c3e50;
+    color: #ba3f97;
 }
 .feature:hover {
     transform: translateY(-5px);
@@ -60,9 +68,8 @@ body {
 }
 .landing-header {
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center; 
-    padding: 20px;
   }
 .logo-container {
     display: flex;
@@ -71,13 +78,16 @@ body {
     margin: 20px 40px;
 }
 .logo-container > h1 {
-    margin-left: 5px;
-    font-size: 1.4em;
+    /* margin-left: 5px; */
+    font-size: 1.6em;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
 }
 .agenda-icon {
     background-image: url(https://i.imgur.com/XiNZUHB_d.png?maxwidth=520&shape=thumb&fidelity=high);
-    width: 1.4em;
-    height: 1.4em;
+    width: 1.5em;
+    height: 1.5em;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 2.5px;
@@ -91,7 +101,7 @@ body {
 }
   .auth-links,
   .nav-links {
-    margin: 6px 10px 10px;
+    margin: 6px 20px 10px;
 }
   .auth-links > a {
     color: white;
@@ -101,14 +111,14 @@ body {
     margin: 0 10px;
 }
   .auth-links > a:first-child {
-    background-color:#0f335a
+    background-color:#bf4f91
 }
   .auth-links > a:first-child:hover {
     background-color: black;
     color: white;
 }
   .auth-links > a:nth-child(2) {
-    background-color: #6f8dae;
+    background-color: #79819f;
 }
   .auth-links > a:nth-child(2):hover {
     background-color: black;
@@ -121,7 +131,7 @@ body {
     color: black;
 }
   .nav-links > a:hover {
-    color: #6f8dae;
+    color: #cda5be;
     text-decoration: underline;
 }
   .nav-links, .auth-links{
@@ -198,7 +208,7 @@ button:hover {
   background-color: black;
 }
 .signup-img {
-  background-image: url(https://img.freepik.com/free-photo/empty-screen-cellphone-pencil-colorful-craft-paper-white-background_23-2148245938.jpg?t=st=1730293015~exp=1730296615~hmac=df9b1611d0c003b245ac9d64b567d0dcc5ae257f3dd4fe2b4cd4c86518d0eab2&w=2000);
+  background-image: url(https://img.freepik.com/free-photo/drawn-light-bulb-sticky-note-surrounded-by-crumpled-paper-white-surface_23-2148245988.jpg?t=st=1730314470~exp=1730318070~hmac=3dfb3f6e1a7fd208620d480eee01c2bede91d040d5499792afa8bfceaa93d813&w=2000);
   min-height: 120vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -258,11 +268,11 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #2e2e2e;
+    background:rgb(191, 191, 191);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-  .card-container ul {
+.card-container ul {
     list-style-type: none;
 }
 .card-container li {
@@ -297,17 +307,29 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #b9dcff;
+    background-color: #f0d6e3;
 }
-
 /*Profile page*/
+.profile-container body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* height: 100vh;
+    width: 100vw;
+    background-color: #f9f7f0; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-pic-img {
+    background-image:url(https://img.freepik.com/free-photo/colorful-crumpled-paper-ball-white-background_23-2148245930.jpg?t=st=1730315615~exp=1730319215~hmac=8d68f2c4ebbf5b8a210d7642b034a2f6526cb0641aa620df1221ce7ffe99ca42&w=2000);
+}
 .profile-container {
+    background-color:#e7e6e6;
     max-width: 800px;
     margin: 5px auto;
     padding: 10px; 
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: left;  */
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
     transition: transform 0.3s;
@@ -330,15 +352,6 @@ button[type="submit"]:hover {
     margin: 10px 0;
     color: #444;
 }
-/* h2 {
-    margin-top: 30px; 
-    color: #333; 
-}
-h1 {
-    text-align: center; 
-    font-size: 2em;
-    margin-bottom: 40px;
-} */
 .profile-pic {
     display: flex;
     flex-direction: column;
@@ -353,9 +366,9 @@ h1 {
     margin-bottom: 10px;
 }
 .profile-pic p {
-    color: #888; 
+    color: #888888; 
 }
-form {
+.profile-pic form {
     margin: 20px 0;
 }
 form p {
@@ -425,7 +438,9 @@ a {
 a:hover {
     text-decoration: underline; 
 }
-
+.container-img body{
+    background-image: url(https://img.freepik.com/free-photo/multicolored-crumpled-paper-arranged-circular-frame-white-backdrop_23-2148245931.jpg?t=st=1730316524~exp=1730320124~hmac=1cedc525d5ba776e722a67b0f5201d9d883494a01975336baf7e212092f808be&w=2000);
+}
 /* Edit Container Styles */
 .container {
     max-width: 600px;
@@ -455,15 +470,6 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-/* input[type="text"],
-input[type="number"],
-input[type="date"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 20px solid #2d2d2d;
-    border-radius: 5px;
-    font-size: 16px;
-} */
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="date"]:focus {
@@ -484,7 +490,6 @@ a:hover {
 .new-container {
     width: 100%;
     max-width: 900px; 
-    background: linear-gradient(135deg, #fffefe, #d8e5e9); /* Gradient background */
     border-radius: 30px; /* More pronounced rounding */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
     padding: 30px;
@@ -499,21 +504,10 @@ a:hover {
     display: flex;
     flex-direction: column; 
 }
-label {
+.new-form-container label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-/* input[type="text"],
-input[type="number"],
-input[type="date"],  
-input[type="password"]  {
-    padding: 15px;
-    margin-bottom: 15px;
-    border: none; 
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s; 
-} */
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="date"]:focus {
@@ -552,44 +546,44 @@ a:hover {
 
 /* Summary Container Styles */
 .summary-container {
-    max-width: 900px; 
-    margin: 80px auto; 
+    max-width: 400px; 
+    margin: 10px auto; 
     padding: 20px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
-h1 {
+.summary-container h1 {
     text-align: center; 
     margin-bottom: 20px; 
 }
-ul {
+.summary-container ul {
     list-style-type: none; 
     padding-left: 0; 
 }
-li {
+.summary-container li {
     background: #e9ecef; 
-    margin: 10px 0; 
+    margin: 5px 0; 
     padding: 15px; 
     border-radius: 8px; 
     transition: background-color 0.3s; 
 }
-li:hover {
+.summary-container li:hover {
     background-color: #d6d9db;
 }
-h3 {
+ h3 {
     text-align: center; 
-    margin-top: 20px; 
+    margin-top: 5px; 
     color: #333; 
 }
-a {
+ a {
     display: block; 
-    margin: 20px auto; 
+    margin: 5px auto; 
     text-align: center;  
     text-decoration: none; 
     font-size: 18px; 
 }
-a:hover {
+ a:hover {
     text-decoration: underline; 
 }
 

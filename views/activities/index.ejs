@@ -11,8 +11,8 @@
     <div class="index-header">
     <h1>Here's All Your Logged Activities</h1>
     <a href="/activities/new">Add a New Activity</a>
-</div>
-<div class="card-container">
+    </div>
+ <div class="card-container">
     <ul>
         <% activity.forEach(activity => { %>
             <% if (activity) { %>
@@ -35,7 +35,7 @@
     <% if (activity.length === 0) { %>
         <p>No activities logged yet. Please log some!</p>
     <% } %>
-</div>
+  </div>
 </body>
 </html>
 

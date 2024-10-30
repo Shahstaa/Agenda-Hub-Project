@@ -8,7 +8,9 @@
     
 </head>
 <body>
+<div class="container-img"></div>
     <%- include('../partials/_navbar.ejs') %>
+
     <div class="container">
         <h1>Edit Activity</h1>
         <form action="/activities/<%= activity._id %>?_method=PUT" method="POST">
@@ -23,5 +25,6 @@
 
         </form>
     </div>
+</div>
 </body>
 </html>
