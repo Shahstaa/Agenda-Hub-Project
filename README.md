@@ -1,7 +1,12 @@
 # Agenda Hub Project
 
-## Project Mock-up
-![alt text](images/Mockup-.png)
+## Screenshot/Logo 
+![alt text](<images/Screenshot 2024-10-30 at 10.36.27 PM.png>)
+
+![alt text](<images/Screenshot 2024-10-30 at 10.36.01 PM.png>)
+
+## Your app's name
+AGENDA HUB 
 
 ## Idea Description
 A web application that allows users to log their daily activities, providing a platform to track time spent on various tasks and reflect on productivity. Users can analyze their time usage to identify patterns, set personal improvement goals, and visualize trends over time. By offering insights into daily time allocation, this self-reflective tool can enhance personal productivity and help users prioritize tasks effectively.
@@ -10,8 +15,27 @@ A web application that allows users to log their daily activities, providing a p
 -ERD/Data Entity Fields:
 ![alt text](<images/ERD diagram.png>)
 
-## User Stories
+## Getting started
+## Explore the application’s functionality:
+- Log Activities: Navigate to the "Add a New Activity" page to log your activities.
+- View Activities: Check all logged activities in the "View Activities" section.
+- Edit Activities: You can edit existing activities to maintain accurate records.
+- Activity Summary: View a summary of your activities to analyze time spent.
 
+## Technology Stack:
+The application is built using Node.js for the backend, with Express.js for routing. MongoDB is used for data storage, and EJS is employed for templating, allowing dynamic rendering of HTML views.
+CSS styling enhances the user interface, ensuring a visually appealing experience.
+
+## Attributions
+- Google Fonts for fonts
+-Freepic for background images
+
+## Technologies used
+- [Node.js](https://nodejs.org/) 
+- [MongoDB](https://www.mongodb.com/) 
+- [Git](https://git-scm.com/) 
+
+## User Stories
 - User Registration and Login:
 As a user, I want to create an account so I can securely log my activities.
 As a user, I want to log in to my account so I can access my activities.
@@ -30,67 +54,11 @@ As a user, I want to set goals for my activities so that I can improve my time m
 - Visualizing Data:
 As a user, I want to see visual representations (charts) of my activity data to better understand my time usage.
 
-## Pseudo Code
-- // User Login
-function loginUser(email, password):
-    user = findUserByEmail(email)
-    if user and verifyHash(password, user.password):
-        return user.id  // Successful login
-    else:
-        return "Invalid credentials"
-
-- // Log Activity
-function logActivity(userId, activityName, duration, date):
-    activityId = saveToDatabase(Activity, {name: activityName, duration, date, userId})
-    return activityId
-
-- // View Activities
-function getUserActivities(userId):
-    return fetchFromDatabase(Activity where userId = userId)
-
-- // Edit Activity
-function editActivity(activityId, newName, newDuration, newDate):
-    updateDatabase(Activity, activityId, {name: newName, duration: newDuration, date: newDate})
-
-- // Delete Activity
-function deleteActivity(activityId):
-    removeFromDatabase(Activity, activityId)
-
-- // Set Goals
-function setGoal(userId, goal):
-    saveToDatabase(Goal, {userId, goal})
-    
-1. Start Server
-2. Connect to MongoDB
-3. Set up Middleware
-4. Define Routes:
-   - / (Home)
-   - /auth (User Authentication)
-   - /activities (Activity Management)
-     - GET: Show All Activities
-     - POST: Create New Activity
-     - GET: Show Activity by ID
-     - PUT: Edit Activity
-     - DELETE: Remove Activity
-     - GET: Summary of Activities
-5. Render Views
-6. Start Listening on Port
-
-
-## Prerequisites
-- [Node.js](https://nodejs.org/) 
-- [MongoDB](https://www.mongodb.com/) 
-- [Git](https://git-scm.com/) 
-
-
-## Features
-- User Authentication: Email/social media sign-up and profile management.
-- Dashboard Overview: Central view of upcoming events, tasks, and calendar.
-- Event Creation: Input event details, select privacy settings, and choose themes.
-- Task Management: Create and manage to-do lists with deadlines.
-- Carbon Footprint Tracking: Track emissions and set reduction goals.
-
-
+## Next Steps
+Planned future enhancements (stretch goals):
+Implement mobile app version
+Integrate with calendar services
+Add reminders and notifications
 
 
 
