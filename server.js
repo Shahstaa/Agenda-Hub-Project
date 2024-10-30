@@ -18,6 +18,7 @@ const addUserToViewsUserToView = require('./middleware/addUserToViews');
 
 const app = express();
 const port = process.env.PORT ? process.env.PORT : '3000';
+const path = require('path');
 
 
 // Middleware to parse URL-encoded data from forms
@@ -26,6 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 // Morgan for logging HTTP requests
 app.use(morgan('dev'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,

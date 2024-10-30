@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Edit Activity</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    
 </head>
 <body>
+    <%- include('../partials/_navbar.ejs') %>
     <div class="container">
-        <%- include('../partials/_navbar.ejs') %>
         <h1>Edit Activity</h1>
         <form action="/activities/<%= activity._id %>?_method=PUT" method="POST">
             <label for="name">Activity Name:</label>

@@ -1,13 +1,24 @@
-
 <nav>
-    <% if (user) { %>
-        <a href="/">Home</a>
-        <a href="/activities/profile">Profile</a>
-        <a href="/activities">View Activities</a>
-        <a href="/activities/summary">Analytics</a>
-        <a href="/auth/sign-out">Sign Out</a>
-    <% } else { %>
-        <a href="/auth/sign-up">Sign Up</a>
-        <a href="/auth/sign-in">Sign In</a>
-    <% } %>
-  </nav>
+    <div class="landing-header">
+        <div class="logo-container">
+            <div class="agenda-icon"></div>
+            <h1>Agenda Hub</h1>
+        </div>
+        <div class="nav-links">
+            <% if (user) { %>
+                <a href="/">Home</a>
+                <a href="/activities/profile">Profile</a>
+                <a href="/activities">View Activities</a>
+                <a href="/activities/summary">Analytics</a>
+                <a href="/auth/sign-out">Sign Out</a>
+            <% } else { %>
+                <div class="auth-links">
+                    <a href="/auth/sign-up">Sign Up</a>
+                    <a href="/auth/sign-in">Sign In</a>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</nav>
+
+        

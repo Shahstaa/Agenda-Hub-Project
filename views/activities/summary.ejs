@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Activity Summary</title>
-    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <%- include('../partials/_navbar.ejs') %>
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="summary-container">
         <h1>Activity Summary</h1>
-        <ul>
-            <% activities.forEach(activity => { %>
-                <li>
-                    <%= activity.name %>: <%= activity.duration %> minutes
-                </li>
-            <% }) %>
-        </ul>
+        <% Object.keys(activitiesByDate).forEach(date => { %>
+            <h2><%= date %></h2>
+            <ul>
+                <% activitiesByDate[date].forEach(activity => { %>
+                    <li>
+                        <%= activity.name %>: <%= activity.duration %> minutes
+                    </li>
+                <% }) %>
+            </ul>
+        <% }) %>
     </div>
     <h3>Total Time Tracked: <%= totalDuration %> minutes</h3>
     <a href="/activities">Back to Activities</a>

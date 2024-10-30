@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Log a New Activity</title>
-    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <%- include('../partials/_navbar.ejs') %>
+    <%- include('../partials/_navbar.ejs') %>
+    <div class="new-container">
+        <div class="new-form-container">
         <h1>Add a New Activity</h1>
         <form action="/activities" method="POST">
             <label for="name">Activity Name:</label>
@@ -16,8 +19,9 @@
             <label for="date">Date:</label>
             <input type="date" name="date" >
             <button type="submit">Save Activity</button>
-        </form>
-        <a href="/activities">Back to Activities</a>
+         </form>
+         <a href="/activities">Back to Activities</a>
+         </div>
     </div>
 </body>
 </html>

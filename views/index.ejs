@@ -1,24 +1,35 @@
-<!-- views/index.ejs -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Agenda Hub</title>
-  </head>
-  <body>
+</head>
+<body class="index-body">
     <%- include('./partials/_navbar.ejs') %>
-    <% if (user) { %>
-      <h1>Stay on top of your priorities!, <%= user.username %>!</h1>
-      <a href="/auth/sign-out">Sign out</a>
-      <% } else { %>
-      <h1>Welcome to Your Agenda</h1>
-      <p>
-        <a href="/auth/sign-up">Sign up</a> or <a href="/auth/sign-in">sign in</a>.
-      </p>
-      <% } %>
-
-      <p><a href="/protected">Get into the VIP Users Only lounge!</a></p>
-  </body>
+    <div class="hero-section">
+        <% if (user) { %>
+            <h1>Stay on top of your priorities, <%= user.username %>!</h1>
+            <a class="btn" href="/auth/sign-out">Sign out</a>
+        <% } else { %>
+            <h2>Welcome to Your Agenda</h2>
+            <h3>Your roadmap to productivity!</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>Today’s Tasks</h4>
+                    <p>Master your to-do list!</p>
+                </div>
+                <div class="feature">
+                    <h4>Goal Tracker</h4>
+                    <p>Celebrate your progress!</p>
+                </div>
+                <div class="feature">
+                    <h4>Upcoming Events</h4>
+                    <p>Don’t miss out on what’s next.</p>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</body>
 </html>

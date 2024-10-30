@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Your Activities</title>
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
+    <div class="index-header">
     <h1>Here's All Your Logged Activities</h1>
     <a href="/activities/new">Add a New Activity</a>
+</div>
+<div class="card-container">
     <ul>
         <% activity.forEach(activity => { %>
             <% if (activity) { %>
@@ -32,6 +35,7 @@
     <% if (activity.length === 0) { %>
         <p>No activities logged yet. Please log some!</p>
     <% } %>
+</div>
 </body>
 </html>
 
