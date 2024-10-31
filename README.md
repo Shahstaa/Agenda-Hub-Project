@@ -31,11 +31,10 @@ A web application that allows users to log their daily activities, providing a p
 - forms MDN
 - Freepic for background images
 
-## Technology Stack:
+## Technology used
 The application is built using Node.js for the backend, with Express.js for routing. MongoDB is used for data storage, and EJS is employed for templating, allowing dynamic rendering of HTML views.
 CSS styling enhances the user interface, ensuring a visually appealing experience.
 
-## Technologies used
 - [Node.js](https://nodejs.org/) 
 - [MongoDB](https://www.mongodb.com/) 
 - [Git](https://git-scm.com/) 
