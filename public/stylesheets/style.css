@@ -14,7 +14,7 @@ body {
     background-size: cover;
 }
 .index-body {
-    background-image: url(https://img.freepik.com/free-photo/digital-tablet-spiral-diary-with-paperclip-white-backdrop_23-2148245961.jpg?t=st=1730290454~exp=1730294054~hmac=9dd0c4c78158ef9e1cf590b6e5dca8e119a99f48bfa17c5fa3566bab96531f29&w=2000);
+    background-image: url(../assest/digital-tablet-spiral-diary-with-paperclip-white-backdrop.jpg);
 }
 .hero-section {
     text-align: center;
@@ -208,7 +208,7 @@ button:hover {
   background-color: black;
 }
 .signup-img {
-  background-image: url(https://img.freepik.com/free-photo/drawn-light-bulb-sticky-note-surrounded-by-crumpled-paper-white-surface_23-2148245988.jpg?t=st=1730314470~exp=1730318070~hmac=3dfb3f6e1a7fd208620d480eee01c2bede91d040d5499792afa8bfceaa93d813&w=2000);
+  background-image: url(../assest/drawn-light-bulb-sticky-note-surrounded-by-crumpled-paper-white-surface.jpg);
   min-height: 120vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -218,7 +218,7 @@ button:hover {
   background-position:center;
 }
 .signin-img {
-    background-image: url(https://img.freepik.com/free-photo/idea-icon-adhesive-note-with-paperclip-crumpled-paper-card-paper-white-desk_23-2148245909.jpg?t=st=1730292836~exp=1730296436~hmac=1fafb4cc6efb3b569f6fcae9016e84477414f9af508e113d8bebc55b2f679538&w=2000);
+    background-image: url(../assest/idea-icon-adhesive-note-with-paperclip-crumpled-paper-card-paper-white-desk.jpg);
     min-height: 110vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -323,7 +323,7 @@ button[type="submit"]:hover {
     background-size: cover;
 }
 .profile-pic-img {
-    background-image:url(https://img.freepik.com/free-photo/colorful-crumpled-paper-ball-white-background_23-2148245930.jpg?t=st=1730315615~exp=1730319215~hmac=8d68f2c4ebbf5b8a210d7642b034a2f6526cb0641aa620df1221ce7ffe99ca42&w=2000);
+    background-image:url(../assest/colorful-crumpled-paper-ball-white-background.jpg);
 }
 .profile-container {
     background-color:#e7e6e6;
