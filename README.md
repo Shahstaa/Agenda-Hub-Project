@@ -1,15 +1,15 @@
 # Agenda Hub Project
 
+## Your app's name
+AGENDA HUB 
+
+## Overview
+A web application that allows users to log their daily activities, providing a platform to track time spent on various tasks and reflect on productivity. Users can analyze their time usage to identify patterns, set personal improvement goals, and visualize trends over time. By offering insights into daily time allocation, this self-reflective tool can enhance personal productivity and help users prioritize tasks effectively.
+
 ## Screenshot/Logo 
 ![alt text](<images/Screenshot 2024-10-30 at 10.36.27 PM.png>)
 
 ![alt text](<images/Screenshot 2024-10-30 at 10.36.01 PM.png>)
-
-## Your app's name
-AGENDA HUB 
-
-## Idea Description
-A web application that allows users to log their daily activities, providing a platform to track time spent on various tasks and reflect on productivity. Users can analyze their time usage to identify patterns, set personal improvement goals, and visualize trends over time. By offering insights into daily time allocation, this self-reflective tool can enhance personal productivity and help users prioritize tasks effectively.
 
 ## Getting started
 ## Explore the application’s functionality:
