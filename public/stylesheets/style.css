@@ -588,6 +588,325 @@ a:hover {
 }
 
 
+/*Media*/
+@media (max-width: 480px) {
+    body {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .index-body {
+        background-image: url(../assest/digital-tablet-spiral-diary-with-paperclip-white-backdrop.jpg);
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section {
+        text-align: center;
+        padding: 40px 15px;
+        margin: 30px;
+        color:#2e2e2e;
+    }
+    .hero-section h1 {
+        font-family: "Homemade Apple", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        margin: 95px 20px;
+    }
+    .hero-section h2 {
+        font-size: 1.8em;
+        text-align: center;
+        margin: 15px 0;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+    .hero-section h3 {
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    .feature {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        margin: 15px;
+        padding: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        flex: 1 1 150px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feature h4 {
+        color: #ba3f97;
+    }
+    .feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .vip-link a {
+        margin-top: 30px;
+    }
+    .landing-header {
+        display: flex; 
+        justify-content:center;
+        align-items: center; 
+        flex-direction: column;
+      }
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .logo-container > h1 {
+        font-size: 1.4em;
+        margin: 10px 0;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+    }
+    .agenda-icon {
+        background-image: url(https://i.imgur.com/XiNZUHB_d.png?maxwidth=520&shape=thumb&fidelity=high);
+        width: 1.5em;
+        height: 1.5em;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 2.5px;
+        padding-left: 5px;
+    }
+    .landing-image {
+        height:auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+      .auth-links,
+      .nav-links {
+        display: flex; 
+        justify-content: space-between;
+        align-items:center;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+      .auth-links > a {
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 5px 5px;
+        padding: 8px 15px;
+        text-align: center;
+    }
+      .auth-links > a:first-child {
+        background-color:#bf4f91
+    }
+      .auth-links > a:first-child:hover {
+        background-color: black;
+        color: white;
+    }
+      .auth-links > a:nth-child(2) {
+        background-color: #79819f;
+    }
+      .auth-links > a:nth-child(2):hover {
+        background-color: black;
+        color: white;
+     }
+      .nav-links > a {
+        text-decoration: none;
+        margin: 5px 0;
+        font-weight: bold;
+        color: black;
+        display: flex; 
+    }
+      .nav-links > a:hover {
+        color: #cda5be;
+        text-decoration: underline;
+    }
+      .nav-links, .auth-links{
+        display: flex;
+        flex-direction: row;
+    }
+      /*index.ejs*/
+      nav {
+        background: #575757;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+      nav a:hover {
+        text-decoration: underline;
+    } 
+    .signup-page,
+    .signin-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height:auto;
+    }
+    .signup-form-container-1,
+    .signin-form-container-1 {
+      width: 95%;
+      margin-right: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 30px 60px;
+    }
+    .signup-form-container-2{
+      padding: 20px;
+      border: 2px solid gray;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px; 
+    }
+    .signin-form-container-2 {
+      padding: 30px;
+      border: 2px solid gray;
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+    }
+    .signup-form-container-2 > h1,
+    .signin-form-container-2 > h1 {
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.3em;
+      display: flex;
+      flex-direction: column;
+    }
+    .signup-form-container-2 > form,
+    .signin-form-container-2 > form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-size: 0.9em;
+    }
+    .signup-form-container-2 input {
+        border: 1px solid rgb(190, 190, 190);
+        border-radius: 10px;
+        margin: 5px 0;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+    .signin-form-container-2 input {
+      border: 1px solid rgb(190, 190, 190);
+      border-radius: 10px;
+      margin: 5px 0;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    button {
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      background-color: #603414;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 10px;
+      cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+      background-color: black;
+      transform: translateY(-2px);
+    }
+    .signup-img {
+      background-image: url(../assest/drawn-light-bulb-sticky-note-surrounded-by-crumpled-paper-white-surface.jpg);
+      min-height: 60vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: relative;
+      z-index: -10;
+      left: -10px;
+    }
+    .signin-img {
+        background-image: url(../assest/idea-icon-adhesive-note-with-paperclip-crumpled-paper-card-paper-white-desk.jpg);
+        min-height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        position: relative;
+        z-index: -10;
+        left: -10px;
+      }
+      h2 {
+        font-size: 1.2em; 
+        text-align: left;
+    }
+    p {
+        font-size: 1em; 
+        text-align: left;
+    }
+    .summary-container {
+        max-width: 90%;
+        margin: 10px auto; /* Centered */
+        padding: 15px; /* Adjusted padding */
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }}
+    .summary-container h1 {
+        text-align: center; /* Center text */
+        margin-bottom: 15px; /* Adjusted margin */
+    }
+
+    .summary-container ul {
+        list-style-type: none; 
+        padding-left: 0; /* No padding */
+    }
+
+    .summary-container li {
+        background: #e9ecef; /* Light background */
+        margin: 5px 0; /* Spacing between items */
+        padding: 10px; /* Padding */
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    .summary-container li:hover {
+        background-color: #d6d9db; /* Highlight on hover */
+    }
+    h3 {
+        text-align: center; /* Center text */
+        margin-top: 5px; /* Adjusted margin */
+        color: #333; /* Text color */
+    }
+
+    a {
+        display: block; /* Block display */
+        margin: 15px auto; /* Centered with margin */
+        text-align: center; 
+        text-decoration: none; 
+        font-size: 16px; /* Responsive font size */
+    }
+    a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+
+
+
 
 
 
